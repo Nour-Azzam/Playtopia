@@ -1,0 +1,160 @@
+// background animations
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #EF6C00 60%, #FFE6C7 40%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
+  }
+}
+//the wrapper styles
+.wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+//buttons as a div styles
+
+.buttons {
+  gap: 0.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 5rem;
+}
+
+.option{
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.43rem;
+  width: 12rem;
+}
+
+//title "playtopia" and its animations
+.title {
+  font-size: 2rem;
+  font-family: "Press Start 2P", cursive;
+  color: #212121;
+  padding-top: 4rem;
+}
+
+.drop-main {
+  display: flex;
+  justify-content: center;
+  margin: 1.5rem;
+}
+
+.p {
+  opacity: 0;
+  animation: drop 0.4s linear forwards;
+}
+
+.l {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.2s;
+}
+
+.a {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.4s;
+}
+
+.y {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.6s;
+}
+
+.t {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 0.8s;
+}
+
+.o {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 1s;
+}
+
+.p2 {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 1.2s;
+}
+
+.i {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 1.4s;
+}
+
+.a2 {
+  opacity: 0;
+  animation: drop 0.4s linear forwards 1.6s;
+}
+
+@keyframes drop {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  50% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  65% {
+    transform: translateY(-17px);
+    opacity: 1;
+  }
+  75% {
+    transform: translateY(-22px);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .title {
+    padding-top: 10rem;
+    font-size: 5rem;
+  }
+
+  .buttons {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  .options{
+    font-size: 0.6rem;
+    width: 16rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .title {
+    padding-top: 10rem;
+    font-size: 6rem;
+  }
+  }
