@@ -1,3 +1,18 @@
+<div class="background-for-animations">
+  <div class="bg"></div>
+  <div class="bg bg2"></div>
+  <div class="bg bg3"></div>
+</div>
 <div class="wrapper">
-    
+  <mat-card class="game-card" *ngFor="let gameInfo of gamesDesc">
+    <div class="image-container">
+      <img
+        class="card-image"
+        src="{{ gameInfo.imageURL }}"
+        alt="{{ gameInfo.name }}"
+      />
+    </div>
+    <mat-card-title>{{ gameInfo.name }}</mat-card-title>
+    <mat-card-content>{{ gameInfo.description }}</mat-card-content>
+  </mat-card>
 </div>

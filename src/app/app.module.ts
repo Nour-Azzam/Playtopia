@@ -8,6 +8,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
 import { HomepageComponent } from './homepage/homepage.component';
 import { GamesListComponent } from './games-list/games-list.component';
+import {MatCardModule} from '@angular/material/card';
+
 
 
 @NgModule({
@@ -20,7 +22,8 @@ import { GamesListComponent } from './games-list/games-list.component';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

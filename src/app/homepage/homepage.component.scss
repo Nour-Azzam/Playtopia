@@ -51,6 +51,22 @@
   font-size: 0.43rem;
   width: 12rem;
 }
+.option {
+  border-radius: 4px;
+  cursor: pointer;
+  background-position: center;
+  transition: background 0.8s;
+  }
+  
+  button:hover {
+  background:#1A237E radial-gradient(circle, transparent 1%, #3949AB 1%) center/15000%;
+  }
+  
+  button:active{
+  background-color:#292d3e;
+  background-size: 100%;
+  transition: background 0s;
+  }
 
 //title "playtopia" and its animations
 .title {
@@ -145,16 +161,23 @@
     justify-content: center;
     flex-direction: row;
   }
+//styling each button
 
-  .options{
-    font-size: 0.6rem;
-    width: 16rem;
+  .option{
+    font-size: 0.5rem;
+    width: 15rem;
   }
 }
+
 
 @media (min-width: 1024px) {
   .title {
     padding-top: 10rem;
     font-size: 6rem;
+  }
+
+  .option{
+    font-size: 0.6rem;
+    width: 16rem;
   }
   }
